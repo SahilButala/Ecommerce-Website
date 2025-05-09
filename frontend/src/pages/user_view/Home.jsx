@@ -30,6 +30,7 @@ import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
 import { addToCart, fetchAllCartItems } from "@/store/userView/cart";
 import ProductDetails from "./ProductDetails";
+import { getFeatureImage } from "@/store/userView/featureImages";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -107,6 +108,10 @@ const Home = () => {
 
     return () => clearInterval(timer);
   });
+
+  useEffect(()=>{
+        dispatch(getFeatureImage())
+  },[])
 
   return (
     <div className="flex flex-col min-h-screen">
