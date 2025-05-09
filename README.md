@@ -19,7 +19,7 @@ A full-featured **eCommerce platform** for  ordering, built using the **MERN sta
 - 📊 **Admin Dashboard** – purchase summary
 - 🍽️ **Manage Products** – Create, update, or delete food items
 - 🚚 **Order Management** – View and update order statuses
-- 📤 **Upload to Cloudinary** – Upload images/videos for food items
+- 📤 **Upload to Cloudinary** – Upload images items
 
 ---
 
