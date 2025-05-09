@@ -38,12 +38,43 @@ A full-featured **eCommerce platform** for  ordering, built using the **MERN sta
 - 🔒 **JWT-based protected routes**
 - 📁 **Multer + Cloudinary** for secure media uploads
 - 🧾 **Dynamic product management** via admin dashboard
+- 🧾 **Filter products by thier category and brands** and sort by price
 - 🌐 **Responsive design** for desktop and mobile
 - 🎯 **Clean UI/UX** with Tailwind styling
 - 📦 **State Management** using Redux
 
 ---
 
-## 📂 Folder Structure (Simplified)
-## Host [Render Link](https://ecommerce-website-frontend-rrwm.onrender.com)
+
+---
+
+## 🧪 Future Enhancements
+- ✅ Payment Integration (e.g., Stripe)
+- ✅ Order history persistence
+- ✅ Email confirmation & notifications
+- ✅ Filter & Search product items
+
+---
+
+## 🕒 Time Spent
+| Task                        | Time          |
+|-----------------------------|---------------|
+| Initial setup & planning    | 1.5 hrs       |
+| Auth & UI implementation    | 4 hrs         |
+| Admin panel + CRUD          | 5 hrs         |
+| Cloudinary integration      | 2 hrs         |
+| Styling & responsiveness    | 3 hrs         |
+| Testing & debugging         | 2 hrs         |
+| **Total**                   | **~17.5 hrs** |
+
+---
+
+## 📍 Live Demo
+🔗 Render : [Live Site](https://your-site-link.com](https://ecommerce-website-frontend-rrwm.onrender.com))
+
+## 📁 Repository
+🔗 [GitHub Repository](https://github.com/SahilButala/Ecommerce-Website)
+
+---
+
 
