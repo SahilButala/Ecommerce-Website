@@ -249,14 +249,12 @@ export async function getAllReviewsService(productId) {
 
   return data;
 }
-export async function getFeatureImageService() {
+export async function getFeatureImageService(){
   const { data } = await axiousInstance.get(`/admin/feature/get`);
-
   return data;
 }
 export async function addFeatureImageService({image}) {
   const { data } = await axiousInstance.post(`/admin/feature/add/`,{image});
-
   return data;
 }
 

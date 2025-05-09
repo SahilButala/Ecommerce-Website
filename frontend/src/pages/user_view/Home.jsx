@@ -102,7 +102,7 @@ const Home = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setcurrentSlide((prev) => (prev + 1) % images.length);
+      setcurrentSlide((prev) => (prev + 1) % images?.data.length);
     }, 3000);
 
     return () => clearInterval(timer);
@@ -111,8 +111,8 @@ const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <div className="relative w-full h-[700px] overflow-hidden">
-        {images && images.length > 0
-          ? images.map((image, i) => (
+        {images?.data && images?.data.length > 0
+          ? images?.data.map((image, i) => (
               <img
                 key={i}
                 src={image.image}
@@ -127,7 +127,7 @@ const Home = () => {
           variant="outline"
           onClick={() =>
             setcurrentSlide(
-              (prevSlide) => (prevSlide - 1 + images.length) % images.length
+              (prevSlide) => (prevSlide - 1 + images?.data?.length) % images?.data?.length
             )
           }
         >
@@ -135,7 +135,7 @@ const Home = () => {
         </Button>
         <Button
           onClick={() =>
-            setcurrentSlide((prevSlide) => (prevSlide + 1) % images.length)
+            setcurrentSlide((prevSlide) => (prevSlide + 1) % images?.data?.length)
           }
           className="top-1/2 absolute right-4 transform -translate-y-1/2  bg-white/80 "
           variant="outline"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ImageUplaod from "./ImageUplaod";
 import { Button } from "@/components/ui/button";
 import { useDispatch, useSelector } from "react-redux";
@@ -15,13 +15,19 @@ const AdminDashBoard = () => {
   const { isLoading, images } = useSelector((state) => state.feature);
   const handleToaddFeatureImage = () => {
     dispatch(addFeatureImage({ image: uploadImageUrl })).then((data) => {
-      if (data?.payload?.success) {
-        dispatch(getFeatureImage());
-        setimageFile(null);
-        setimageUploadLoading("");
-      }
+      console.log("data-----" , data)
+         if(data?.payload?.success){
+          dispatch(getFeatureImage());
+          setimageFile(null);
+          setimageUploadLoading("");
+         }
     });
   };
+
+
+  useEffect(()=>{
+             dispatch(getFeatureImage())
+  }, [])
 
   return (
     <div>
@@ -38,8 +44,8 @@ const AdminDashBoard = () => {
       </Button>
 
       <div className="mt-4 ">
-        {images && images.length > 0 ? (
-          images.map((image, i) => (
+        {images?.data && images?.data.length > 0 ? (
+          images?.data.map((image, i) => (
             <div className="relative " key={i}>
               <img
                 src={image.image}

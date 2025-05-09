@@ -1,6 +1,6 @@
 import axious from 'axios'
-const url =  "https://ecommerce-website-backend-jdgh.onrender.com"
-// const url = 'http://localhost:3000'
+// const url =  "https://ecommerce-website-backend-jdgh.onrender.com"
+const url = 'http://localhost:3000'
 
 const  axiousInstance = axious.create({
     baseURL : url

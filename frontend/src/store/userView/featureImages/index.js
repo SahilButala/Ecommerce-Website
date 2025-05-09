@@ -30,7 +30,8 @@ const FeatureImageSlice = createSlice({
          }).addCase(getFeatureImage.pending , (state,action)=>{
             state.isLoading = true
         }).addCase(getFeatureImage.fulfilled , (state,action)=>{
-             state.images = action.payload.data,
+            console.log("images----" , action.payload)
+             state.images = action.payload,
              state.isLoading = false
         }).addCase(getFeatureImage.rejected , (state,action)=>{
              state.isLoading = false,
