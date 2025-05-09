@@ -45,15 +45,6 @@ A full-featured **eCommerce platform** for  ordering, built using the **MERN sta
 
 ---
 
-
----
-
-## 🧪 Future Enhancements
-- ✅ Payment Integration (e.g., Stripe)
-- ✅ Order history persistence
-- ✅ Email confirmation & notifications
-- ✅ Filter & Search product items
-
 ---
 
 ## 🕒 Time Spent
